@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Estimador Adwords</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="text1">Búsquedas mensuales</string>
+    <string name="textView2">Inversión mensual</string>
+    <string name="textView3">CPC máximo</string>
+    <string name="textView4">Ganancia promedio por venta</string>
+    <string name="textView5">Porcentaje conversión AdWords</string>
+    <string name="enviar">Estimar</string>
+    
+    
+</resources>

@@ -4,12 +4,25 @@
     <string name="app_name">Estimador Adwords</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="seccion1">Tienda en Linea</string>
+    <string name="seccion2">Productos y Servicios</string>
+    <string name="seccion3">Servicios Acumulables</string>
 	<string name="text1">Búsquedas mensuales</string>
     <string name="textView2">Inversión mensual</string>
     <string name="textView3">CPC máximo</string>
     <string name="textView4">Ganancia promedio por venta</string>
     <string name="textView5">Porcentaje conversión AdWords</string>
     <string name="enviar">Estimar</string>
+    <string name="busquedas">Busquedas mensaules</string>
     
+    <string name="clicks">Clicks</string>
+    <string name="porcentaje">Porcentaje</string>
+    <string name="cp_max">CP Máximo</string>
+    <string name="conversiones">Conversiones</string>
+    <string name="inversion">Inversion</string>
+    <string name="ganancia">Ganancia por mes</string>
+    <string name="ganancia2">Ganancia por campaña</string>
+    <string name="tco">TCO</string>
+
     
 </resources>

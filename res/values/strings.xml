@@ -14,6 +14,8 @@
     <string name="textView5">Porcentaje conversión AdWords</string>
     <string name="enviar">Estimar</string>
     <string name="busquedas">Busquedas mensaules</string>
+    <string name="c_empresa">Porcentaje conversión Empresa</string>
+    
     
     <string name="clicks">Clicks</string>
     <string name="porcentaje">Porcentaje</string>
@@ -23,6 +25,13 @@
     <string name="ganancia">Ganancia por mes</string>
     <string name="ganancia2">Ganancia por campaña</string>
     <string name="tco">TCO</string>
+    
+    <string name="porcentaje_empresa">Porcentaje Conversión Empresa</string>
+    <string name="conversiones_empresa">Conversiones Empresa</string>
+    <string name="ganancia_x_conv">Ganancias por Conversión</string>
+    <string name="ganancia_camp">Ganancias por Campaña</string>
+    
 
+    <color name="green">#3ADF00</color>
     
 </resources>

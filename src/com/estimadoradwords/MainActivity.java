@@ -48,25 +48,122 @@ public class MainActivity extends ActionBarActivity {
 			setContentView(R.layout.seccion_dos);
 			return true;
 		}
-		if (id == R.id.seccion3) {
+		/*if (id == R.id.seccion3) {
 			setContentView(R.layout.seccion_tres);
 			return true;
-		}
+		}*/
 		
 		return super.onOptionsItemSelected(item);
 	}
 	
 	public void seccion1(View v) {
-	//	busquedas   = (EditText)findViewById(R.id.editText1);
 		
-		TextView res1 = (TextView)findViewById(R.id.textView8);
-		res1.setText("PRUEBA");
+		EditText _clicks_totales = (EditText)findViewById(R.id.editText1);
+		float clicks_totales = Float.parseFloat(_clicks_totales.getText().toString());
+		
+		EditText _inversion = (EditText)findViewById(R.id.editText2);
+		float inversion = Float.parseFloat(_inversion.getText().toString());
+		
+		EditText _cpc = (EditText)findViewById(R.id.editText3);
+		float cpc = Float.parseFloat(_cpc.getText().toString());
+		
+		EditText _ganancia_conversion = (EditText)findViewById(R.id.editText4);
+		float ganancia_conversion = Float.parseFloat(_ganancia_conversion.getText().toString());
+		
+		EditText _porcentaje_conversion_adwords = (EditText)findViewById(R.id.editText5);
+		float porcentaje_conversion_adwords = Float.parseFloat(_porcentaje_conversion_adwords.getText().toString());
+		
+		
+		float clicks = inversion / cpc;
+		float tco = cpc / ganancia_conversion * 100;
+		float conversiones = clicks * porcentaje_conversion_adwords/100;
+		ganancia_conversion = conversiones * ganancia_conversion;
+		float costo_mensual = clicks * cpc;
+		float ganancia_campana = ganancia_conversion - costo_mensual;
+		float roi = ganancia_campana / costo_mensual * 100;
+			
+		
+		TextView tmp = (TextView)findViewById(R.id.textView8);
+		tmp.setText( Float.toString(clicks_totales) );
+		
+		tmp = (TextView)findViewById(R.id.textView9);
+		tmp.setText( Float.toString(cpc) );
+		
+		tmp = (TextView)findViewById(R.id.textView15);
+		tmp.setText( Float.toString(inversion) );
+		
+		tmp = (TextView)findViewById(R.id.textView19);
+		tmp.setText( Float.toString(tco) );
+		
+		tmp = (TextView)findViewById(R.id.textView12);
+		tmp.setText( Float.toString(roi) );
+		
+		tmp = (TextView)findViewById(R.id.textView13);
+		tmp.setText( Float.toString(conversiones) );
+		
+		tmp = (TextView)findViewById(R.id.textView17);
+		tmp.setText( Float.toString(ganancia_conversion) );
+		
+		tmp = (TextView)findViewById(R.id.textView21);
+		tmp.setText( Float.toString(ganancia_campana) );
 		
 		
 	}
 	
 	public void seccion2(View v) {
 		
+		EditText _clicks_totales = (EditText)findViewById(R.id.editText1);
+		float clicks_totales = Float.parseFloat(_clicks_totales.getText().toString());
+		
+		EditText _inversion = (EditText)findViewById(R.id.editText2);
+		float inversion = Float.parseFloat(_inversion.getText().toString());
+		
+		EditText _cpc = (EditText)findViewById(R.id.editText3);
+		float cpc = Float.parseFloat(_cpc.getText().toString());
+		
+		EditText _ganancia_conversion = (EditText)findViewById(R.id.editText4);
+		float ganancia_conversion = Float.parseFloat(_ganancia_conversion.getText().toString());
+		
+		EditText _porcentaje_conversion_adwords = (EditText)findViewById(R.id.editText5);
+		float porcentaje_conversion_adwords = Float.parseFloat(_porcentaje_conversion_adwords.getText().toString());
+		
+		
+		EditText _porcentaje_conversion_empresa = (EditText)findViewById(R.id.edit_empresa);
+		float porcentaje_conversion_empresa = Float.parseFloat(_porcentaje_conversion_empresa.getText().toString());
+		
+		float clicks = inversion / cpc;
+		float tco = cpc / ganancia_conversion * 100;
+		float conversiones = clicks * porcentaje_conversion_adwords/100;
+		float conversiones_empresa = conversiones * porcentaje_conversion_empresa / 100;
+		ganancia_conversion = conversiones_empresa * ganancia_conversion;
+		float costo_mensual = clicks * cpc;
+		float ganancia_campana = ganancia_conversion - costo_mensual;
+		float roi = ganancia_campana / costo_mensual * 100;
+			
+		
+		TextView tmp = (TextView)findViewById(R.id.textView8);
+		tmp.setText( Float.toString(clicks_totales) );
+		
+		tmp = (TextView)findViewById(R.id.textView9);
+		tmp.setText( Float.toString(cpc) );
+		
+		tmp = (TextView)findViewById(R.id.textView15);
+		tmp.setText( Float.toString(inversion) );
+		
+		tmp = (TextView)findViewById(R.id.textView19);
+		tmp.setText( Float.toString(tco) );
+		
+		tmp = (TextView)findViewById(R.id.textView12);
+		tmp.setText( Float.toString(roi) );
+		
+		tmp = (TextView)findViewById(R.id.textView13);
+		tmp.setText( Float.toString(conversiones_empresa) );
+		
+		tmp = (TextView)findViewById(R.id.textView17);
+		tmp.setText( Float.toString(ganancia_conversion) );
+		
+		tmp = (TextView)findViewById(R.id.textView21);
+		tmp.setText( Float.toString(ganancia_campana) );
 			
 	}
 	

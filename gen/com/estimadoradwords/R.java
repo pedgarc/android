@@ -2060,9 +2060,8 @@ containing a value of this type.
         public static final int search_plate=0x7f090046;
         public static final int search_src_text=0x7f090047;
         public static final int search_voice_btn=0x7f09004b;
-        public static final int seccion1=0x7f090085;
-        public static final int seccion2=0x7f090086;
-        public static final int seccion3=0x7f090087;
+        public static final int seccion1=0x7f090088;
+        public static final int seccion2=0x7f090089;
         public static final int select_dialog_listview=0x7f09004c;
         public static final int shortcut=0x7f090037;
         public static final int showCustom=0x7f090010;
@@ -2105,6 +2104,9 @@ containing a value of this type.
         public static final int textView20=0x7f090070;
         public static final int textView21=0x7f090071;
         public static final int textView22=0x7f090072;
+        public static final int textView23=0x7f090085;
+        public static final int textView24=0x7f090086;
+        public static final int textView25=0x7f090087;
         public static final int textView3=0x7f090055;
         public static final int textView4=0x7f090058;
         public static final int textView5=0x7f09005b;
@@ -2267,17 +2269,18 @@ containing a value of this type.
         public static final int c_empresa=0x7f0a001f;
         public static final int clicks=0x7f0a0020;
         public static final int conversiones=0x7f0a0023;
-        public static final int conversiones_empresa=0x7f0a0029;
+        public static final int conversiones_empresa=0x7f0a002a;
         public static final int cp_max=0x7f0a0022;
         public static final int enviar=0x7f0a001d;
         public static final int ganancia=0x7f0a0025;
         public static final int ganancia2=0x7f0a0026;
-        public static final int ganancia_camp=0x7f0a002b;
-        public static final int ganancia_x_conv=0x7f0a002a;
+        public static final int ganancia_camp=0x7f0a002c;
+        public static final int ganancia_x_conv=0x7f0a002b;
         public static final int hello_world=0x7f0a0013;
         public static final int inversion=0x7f0a0024;
         public static final int porcentaje=0x7f0a0021;
-        public static final int porcentaje_empresa=0x7f0a0028;
+        public static final int roi=0x7f0a0027;
+        public static final int roi2=0x7f0a0029;
         public static final int seccion1=0x7f0a0015;
         public static final int seccion2=0x7f0a0016;
         public static final int seccion3=0x7f0a0017;
@@ -2288,7 +2291,7 @@ containing a value of this type.
          [CHAR LIMIT=4] 
          */
         public static final int status_bar_notification_info_overflow=0x7f0a0011;
-        public static final int tco=0x7f0a0027;
+        public static final int tco=0x7f0a0028;
         public static final int text1=0x7f0a0018;
         public static final int textView2=0x7f0a0019;
         public static final int textView3=0x7f0a001a;

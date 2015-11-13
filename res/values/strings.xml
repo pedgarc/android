@@ -19,17 +19,18 @@
     
     <string name="clicks">Clicks</string>
     <string name="porcentaje">Porcentaje</string>
-    <string name="cp_max">CP Máximo</string>
+    <string name="cp_max">CPC Máx</string>
     <string name="conversiones">Conversiones</string>
     <string name="inversion">Inversion</string>
-    <string name="ganancia">Ganancia por mes</string>
-    <string name="ganancia2">Ganancia por campaña</string>
+    <string name="ganancia">Gan. Conversion</string>
+    <string name="ganancia2">Utilidad</string>
+    <string name="roi">ROI</string>
     <string name="tco">TCO</string>
     
-    <string name="porcentaje_empresa">Porcentaje Conversión Empresa</string>
-    <string name="conversiones_empresa">Conversiones Empresa</string>
-    <string name="ganancia_x_conv">Ganancias por Conversión</string>
-    <string name="ganancia_camp">Ganancias por Campaña</string>
+    <string name="roi2">ROI</string>
+    <string name="conversiones_empresa">Conves. Empresa</string>
+    <string name="ganancia_x_conv">Gan. Conver.</string>
+    <string name="ganancia_camp">Utilidad</string>
     
 
     <color name="green">#3ADF00</color>

@@ -8,33 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" >
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="290dp"
-        android:layout_marginTop="78dp"
-        android:text="Tienda en línea"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#0A0A2A"
-        android:textStyle="bold"
-        android:textSize="28sp" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@color/green"
-        android:onClick="seccion2"
-        android:text="@string/enviar"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:textSize="22sp" />
-
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="wrap_content"
@@ -169,14 +142,28 @@
         
     </TableLayout>
 
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_marginBottom="59dp"
+        android:layout_marginLeft="42dp"
+        android:text="Productos y servicios"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0A0A2A"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button1"
-        android:layout_marginLeft="77dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="63dp"
         android:textStyle="bold" >
 
         <TableRow
@@ -197,7 +184,6 @@
                 android:id="@+id/textView8"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
 
             <TextView
@@ -205,7 +191,7 @@
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/porcentaje_empresa"
+                android:text="@string/roi"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -213,7 +199,6 @@
                 android:id="@+id/textView12"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -234,7 +219,6 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
 
             <TextView
@@ -250,7 +234,6 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -271,7 +254,6 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="18sp" />
 
             <TextView
@@ -287,7 +269,6 @@
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -308,7 +289,6 @@
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
 
             <TextView
@@ -316,7 +296,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/ganancia_empresa"
+                android:text="Ganancia empresa"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -324,12 +304,22 @@
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20sp" />
         </TableRow>
-        
-       
-        
     </TableLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="27dp"
+        android:background="@color/green"
+        android:onClick="seccion2"
+        android:text="@string/enviar"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

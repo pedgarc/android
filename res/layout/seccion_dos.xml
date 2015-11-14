@@ -9,172 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/tableLayout2"
-        android:layout_marginBottom="95dp" >
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="@string/text1"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" >
-
-                <requestFocus />
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/textView2"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/textView3"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/textView4"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/textView5"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </TableRow>
-        
-         <TableRow
-            android:id="@+id/tableRow10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/c_empresa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/c_empresa"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/edit_empresa"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </TableRow>
-        
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tableLayout1"
-        android:layout_alignLeft="@+id/tableLayout1"
-        android:layout_marginBottom="59dp"
-        android:layout_marginLeft="42dp"
-        android:text="Productos y servicios"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#0A0A2A"
-        android:textSize="28sp"
-        android:textStyle="bold" />
-
-    <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="1000sp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button1"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="63dp"
         android:textStyle="bold" >
 
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="47dp" />
+
         <TableRow
             android:id="@+id/tableRow6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp" >
+            android:layout_marginTop="20dp" >
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="180dp"
+                android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:text="@string/clicks"
                 android:textSize="20sp"
@@ -182,13 +41,13 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="70dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="260dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="@string/roi"
@@ -197,7 +56,7 @@
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="70dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp" />
         </TableRow>
@@ -320,6 +179,151 @@
         android:text="@string/enviar"
         android:textColor="#ffffff"
         android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/tableLayout2"
+        android:layout_marginBottom="98dp"
+        android:layout_marginLeft="40dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView4"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView5"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/c_empresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c_empresa"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_empresa"
+                android:layout_width="70dp"
+                android:layout_height="40sp"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="64dp"
+        android:text="Productos y servicios"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0A0A2A"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

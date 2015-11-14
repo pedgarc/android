@@ -1,6 +1,7 @@
 package com.estimadoradwords;
 
 import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,22 +57,74 @@ public class MainActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	private boolean isEmpty(EditText etText) {
+	    if (etText.getText().toString().trim().length() > 0) {
+	        return false;
+	    } else {
+	        return true;
+	    }
+	}
+	
 	public void seccion1(View v) {
 		
+		TextView flashmessage = (TextView)findViewById(R.id.textView23);
+		flashmessage.setText( "" );
+		
 		EditText _clicks_totales = (EditText)findViewById(R.id.editText1);
+		if ( TextUtils.isEmpty(_clicks_totales.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_clicks_totales.setError("Es requerido");
+			return;
+		}
 		float clicks_totales = Float.parseFloat(_clicks_totales.getText().toString());
 		
+
+		
 		EditText _inversion = (EditText)findViewById(R.id.editText2);
+		if ( TextUtils.isEmpty(_inversion.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_inversion.setError("Es requerido");
+			return;
+		}
 		float inversion = Float.parseFloat(_inversion.getText().toString());
 		
+		
 		EditText _cpc = (EditText)findViewById(R.id.editText3);
+		if ( TextUtils.isEmpty(_cpc.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_cpc.setError("Es requerido");
+			return;
+		}
 		float cpc = Float.parseFloat(_cpc.getText().toString());
 		
+		
+		
 		EditText _ganancia_conversion = (EditText)findViewById(R.id.editText4);
+		if ( TextUtils.isEmpty(_ganancia_conversion.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_ganancia_conversion.setError("Es requerido");
+			return;
+		}
 		float ganancia_conversion = Float.parseFloat(_ganancia_conversion.getText().toString());
 		
+		
+		
 		EditText _porcentaje_conversion_adwords = (EditText)findViewById(R.id.editText5);
+		if ( TextUtils.isEmpty(_porcentaje_conversion_adwords.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_porcentaje_conversion_adwords.setError("Es requerido");
+			return;
+		}
 		float porcentaje_conversion_adwords = Float.parseFloat(_porcentaje_conversion_adwords.getText().toString());
+		
+		
+		
+		
 		
 		
 		float clicks = inversion / cpc;
@@ -81,6 +134,11 @@ public class MainActivity extends ActionBarActivity {
 		float costo_mensual = clicks * cpc;
 		float ganancia_campana = ganancia_conversion - costo_mensual;
 		float roi = ganancia_campana / costo_mensual * 100;
+		
+		if(clicks > clicks_totales) {
+			clicks = clicks_totales;
+			flashmessage.setText("La inversión máxima debe ser menor o igual a $" + Float.toString(clicks_totales*cpc));
+		}
 			
 		
 		TextView tmp = (TextView)findViewById(R.id.textView8);
@@ -112,23 +170,62 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void seccion2(View v) {
 		
+		TextView flashmessage = (TextView)findViewById(R.id.textView23);
+		flashmessage.setText( "" );
+		
 		EditText _clicks_totales = (EditText)findViewById(R.id.editText1);
+		if ( TextUtils.isEmpty(_clicks_totales.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_clicks_totales.setError("Es requerido");
+			return;
+		}
 		float clicks_totales = Float.parseFloat(_clicks_totales.getText().toString());
 		
 		EditText _inversion = (EditText)findViewById(R.id.editText2);
+		if ( TextUtils.isEmpty(_inversion.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_inversion.setError("Es requerido");
+			return;
+		}
 		float inversion = Float.parseFloat(_inversion.getText().toString());
 		
 		EditText _cpc = (EditText)findViewById(R.id.editText3);
+		if ( TextUtils.isEmpty(_cpc.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_cpc.setError("Es requerido");
+			return;
+		}
 		float cpc = Float.parseFloat(_cpc.getText().toString());
 		
 		EditText _ganancia_conversion = (EditText)findViewById(R.id.editText4);
+		if ( TextUtils.isEmpty(_ganancia_conversion.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_ganancia_conversion.setError("Es requerido");
+			return;
+		}
 		float ganancia_conversion = Float.parseFloat(_ganancia_conversion.getText().toString());
 		
 		EditText _porcentaje_conversion_adwords = (EditText)findViewById(R.id.editText5);
+		if ( TextUtils.isEmpty(_porcentaje_conversion_adwords.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_porcentaje_conversion_adwords.setError("Es requerido");
+			return;
+		}
 		float porcentaje_conversion_adwords = Float.parseFloat(_porcentaje_conversion_adwords.getText().toString());
 		
 		
 		EditText _porcentaje_conversion_empresa = (EditText)findViewById(R.id.edit_empresa);
+		if ( TextUtils.isEmpty(_porcentaje_conversion_empresa.getText().toString()) ) {
+			
+			flashmessage.setText( "Por favor completa todos los campos" );
+			_porcentaje_conversion_empresa.setError("Es requerido");
+			return;
+		}
 		float porcentaje_conversion_empresa = Float.parseFloat(_porcentaje_conversion_empresa.getText().toString());
 		
 		float clicks = inversion / cpc;
@@ -139,6 +236,12 @@ public class MainActivity extends ActionBarActivity {
 		float costo_mensual = clicks * cpc;
 		float ganancia_campana = ganancia_conversion - costo_mensual;
 		float roi = ganancia_campana / costo_mensual * 100;
+		
+		
+		if(clicks > clicks_totales) {
+			clicks = clicks_totales;
+			flashmessage.setText("La inversión máxima debe ser menor o igual a $" + Float.toString(clicks_totales*cpc));
+		}
 			
 		
 		TextView tmp = (TextView)findViewById(R.id.textView8);
